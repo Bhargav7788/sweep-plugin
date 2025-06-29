@@ -1,11 +1,18 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.bhargav7788.sweepplugin</id>
     <name>Sweep AI Snippets</name>
-    <vendor>Bhargav7788</vendor>
+    <version>1.0.0</version>
+    <vendor email="you@example.com" url="https://github.com/Bhargav7788">Bhargav Mylavarapu</vendor>
+
+    <description>
+        <![CDATA[
+            Sweep AI Snippets provides AI-powered Java code completions.<br/>
+            Just type <code>for</code> in a .java file and hit <code>Ctrl + Space</code>.<br/>
+            It adds smart IntelliJ suggestions.
+        ]]>
+    </description>
 
     <depends>com.intellij.modules.platform</depends>
-
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -15,7 +22,5 @@
         <toolWindow
                 factoryClass="com.github.bhargav7788.sweepplugin.toolWindow.MyToolWindowFactory"
                 id="MyToolWindow"/>
-        <postStartupActivity
-                implementation="com.github.bhargav7788.sweepplugin.startup.MyProjectActivity" />
     </extensions>
 </idea-plugin>
